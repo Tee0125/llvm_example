@@ -5,3 +5,6 @@ global_variable: global_variable.cc
 
 function: function.cc
 	g++ -o $@ `llvm-config --cxxflags --ldflags --libs` $^
+
+constant_array: constant_array.cc
+	g++ -o $@ `llvm-config --cxxflags --ldflags --libs` $^
